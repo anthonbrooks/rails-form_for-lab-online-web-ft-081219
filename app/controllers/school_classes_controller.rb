@@ -12,6 +12,17 @@ class SchoolClassesController < ActionController::Base
   end 
   
   def create 
+    @school_class = SchoolClass.new(school_class_params)
+
+  end 
+  
+  def update 
+    
+  end 
+  
+  private
+  
+  def school_class_params
     
   end 
 end 
