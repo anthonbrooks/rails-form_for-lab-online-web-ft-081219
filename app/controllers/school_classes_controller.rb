@@ -18,7 +18,7 @@ class SchoolClassesController < ActionController::Base
   end 
   
   def update 
-    
+    @school_class = SchoolClass.find(params[:id])
   end 
   
   private
