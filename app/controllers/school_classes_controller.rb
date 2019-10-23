@@ -23,6 +23,6 @@ class SchoolClassesController < ActionController::Base
   private
   
   def school_class_params(*args)
-    params
+    params.require()
   end 
 end 
