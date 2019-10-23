@@ -18,12 +18,13 @@ class StudentsController < ActionController::Base
   end 
   
   def update
-    
+    @student = Student.find(params[:id])
+    @student
   end 
   
   private
   
-  def student_params
-    params.require()
+  def student_params(*args)
+    params.require(:student).permit(*args)
   end
 end 
