@@ -16,4 +16,14 @@ class StudentsController < ActionController::Base
     @student.save
     redirect_to student_path(@student)
   end 
+  
+  def update
+    
+  end 
+  
+  private
+  
+  def student_params
+    params.require()
+  end
 end 
