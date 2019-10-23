@@ -10,4 +10,8 @@ class SchoolClassesController < ActionController::Base
   def edit 
     @school_class = SchoolClass.find(params[:id])
   end 
+  
+  def create 
+    
+  end 
 end 
