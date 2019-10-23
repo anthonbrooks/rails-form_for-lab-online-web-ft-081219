@@ -12,8 +12,8 @@ class SchoolClassesController < ActionController::Base
   end 
   
   def create 
-    @school_class = SchoolClass.new(school_class_params)
-
+    @school_class = SchoolClass.new(school_class_params(title: , room_number))
+    
   end 
   
   def update 
@@ -23,6 +23,6 @@ class SchoolClassesController < ActionController::Base
   private
   
   def school_class_params(*args)
-    params.require()
+    params.require(:school_class).permit(*args)
   end 
 end 
