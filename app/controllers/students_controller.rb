@@ -12,6 +12,6 @@ class StudentsController < ActionController::Base
   end 
   
   def create
-    
+    @student = Student.new(student_params)
   end 
 end 
