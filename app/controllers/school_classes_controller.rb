@@ -13,7 +13,8 @@ class SchoolClassesController < ActionController::Base
   
   def create 
     @school_class = SchoolClass.new(school_class_params(title: , room_number))
-    
+    @school_class.save
+    redirect_to path_to()
   end 
   
   def update 
