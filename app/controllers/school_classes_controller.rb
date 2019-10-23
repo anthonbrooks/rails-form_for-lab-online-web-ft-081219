@@ -22,7 +22,7 @@ class SchoolClassesController < ActionController::Base
   
   private
   
-  def school_class_params
-    
+  def school_class_params(*args)
+    params
   end 
 end 
