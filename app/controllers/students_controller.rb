@@ -1,5 +1,5 @@
 class StudentsController < ActionController::Base
-  def new 
+  def new_student_path
     @student = Student.new 
   end 
   
@@ -7,7 +7,7 @@ class StudentsController < ActionController::Base
     @student = Student.find(params[:id])
   end 
   
-  def edit 
+  def edit_student_path
     @student = Student.find(params[:id])
   end 
   
